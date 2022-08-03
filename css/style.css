@@ -8,12 +8,13 @@
 
 body {
     width: 100%;
-    min-height: 100vh;
-    padding: 33px;
+    height: 100vh;
+    padding: 21px;
     background-color: #fff;
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    overflow-y: hidden;
 }
 
 form {
@@ -23,7 +24,16 @@ form {
     align-items: center;
 }
 
+.instacel {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .login {
+    height: 100vh;
+    padding: 38px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -129,4 +139,10 @@ spam {
 
 .apps {
     margin-bottom: 20px;
+}
+
+@media (max-width: 860px) {
+    .instacel {
+        display: none;
+    }
 }
